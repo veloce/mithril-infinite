@@ -15,9 +15,7 @@ watch ({
     },
     transform: function(inPath, outPath) {
         return [
-            'babel', inPath, '>', outPath,
-            '&&',
-            'uglifyjs', '--screw-ie8 -c -m sort -r \'require,exports\' -o', outPath, outPath
+            'babel', inPath, '>', outPath
         ].join(' ');
     }
 });
