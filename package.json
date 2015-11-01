@@ -8,7 +8,9 @@
     "watch": "node scripts/transpile.js watch lib node_modules",
     "standalone-css": "node scripts/create-standalone-css.js > lib/mithril-infinite.css"
   },
-  "dependencies": {},
+  "dependencies": {
+    "verge": "^1.9.1"
+  },
   "devDependencies": {
     "babel": "^5.8.23",
     "j2c": "^0.7.3",
